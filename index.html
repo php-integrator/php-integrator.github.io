@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PHP Integrator</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #333333;
+            background-color: white;
+        }
+
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            margin-top: 1.5em;
+        }
+
+        h2:before {
+            content: ' ⁓ ';
+        }
+
+        p {
+            line-height: 1.5;
+            margin-top: 1.5em;
+        }
+
+        ul li {
+            line-height: 1.7;
+        }
+
+        a {
+            color: #333333;
+        }
+
+        ul {
+            margin-top: 15px;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .content {
+            max-width: 952px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+
+            animation: fadeIn 0.5s 1;
+        }
+
+        .title {
+            margin-top: 15px;
+        }
+
+        .left {
+            order: 1;
+            flex: 0 0 50%;
+        }
+
+        .right {
+            order: 2;
+            flex: 0 0 50%;
+        }
+
+        .left p, .left h3 {
+            padding-right: 50px;
+        }
+
+        .right p, .right h3 {
+            padding-left: 50px;
+        }
+
+        .left img, .right img {
+            width: 100%;
+        }
+
+        .row {
+            display: inline-flex;
+
+            margin-top: 25px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .small-text {
+            font-size: 13px;
+        }
+
+        .bottom-bar {
+            padding: 10px;
+            color: #444444;
+            background-color: #ddd;
+        }
+
+        @keyframes fadeIn {
+           0%   { opacity: 0; margin-top: 25px; }
+           100% { opacity: 1; margin-top: 50px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="center">
+            <img src="images/logo.png" alt="Logo" />
+        </div>
+
+        <h1 class="title center">PHP Integrator</h1>
+
+        <div class="center">
+            <em>PHP code analysis and utilities for the Atom editor</em>
+
+            <div class="small-text">
+                <a href="https://github.com/Gert-dev/php-integrator-base">Show me the source</a>
+            </div>
+        </div>
+
+        <p>
+            PHP Integrator is an open-source project that provides code analysis and utilities for PHP projects. In
+            combination with the <a href="https://www.atom.com">Atom</a> editor it integrates a powerful development
+            environment inside your text editor.
+        </p>
+
+        <div class="row">
+            <div class="right">
+                <img src="images/autocompletion.png" />
+            </div>
+
+            <div class="left">
+                <h3>Autocompletion</h3>
+                <p>
+                    One of the most useful features in a programmer's toolbox is autocompletion, which suggests:
+                </p>
+
+                <ul>
+                    <li>Relevant object class members</li>
+                    <li>Global functions and constants</li>
+                    <li>Local variables</li>
+                    <li><a href="https://github.com/Gert-dev/php-integrator-autocomplete-plus">And more</a></li>
+                </ul>
+
+                <p class="small-text">
+                    <a href="https://github.com/Gert-dev/php-integrator-autocomplete-plus">View the source</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/code-navigation.png" />
+            </div>
+
+            <div class="right">
+                <h3>Code navigation</h3>
+                <p>
+                    Code navigation allows you to effortlessly travel through your codebase by clicking the names
+                    of method calls, classes, interfaces, and other structural elements.
+                </p>
+
+                <p>
+                    Navigating will immediately take you to the relevant location in your code base.
+                </p>
+
+                <p class="small-text">
+                    <a href="https://github.com/Gert-dev/php-integrator-navigation">View the source</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="right">
+                <img src="images/annotations.png" />
+            </div>
+
+            <div class="left">
+                <h3>Annotations</h3>
+                <p>
+                    Annotations provide you with relevant information about your code, such as that a parent property is
+                    being overridden or an interface method is being implemented.
+                </p>
+
+                <p>
+                    As an added bonus, clicking them will take you to the related element, whenever possible.
+                </p>
+
+                <p class="small-text">
+                    <a href="https://github.com/Gert-dev/php-integrator-annotations">View the source</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/tooltips.png" />
+            </div>
+
+            <div class="right">
+                <h3>Tooltips</h3>
+                <p>
+                    Tooltips display documentation for structural elements. Think extended docblock descriptions,
+                    method parameter descriptions, return type descriptions and exceptions thrown.
+                </p>
+
+                <p class="small-text">
+                    <a href="https://github.com/Gert-dev/php-integrator-tooltips">View the source</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="right">
+                <img src="images/refactoring.png" />
+            </div>
+
+            <div class="left">
+                <h3>Refactoring</h3>
+                <p>
+                    Refactoring is the component that has the most potential. Features currently include:
+                </p>
+
+                <ul>
+                    <li>Generating constructors</li>
+                    <li>Overriding existing methods</li>
+                    <li>Getter and setter generation</li>
+                    <li>Stubbing interface methods and abstract methods</li>
+                </ul>
+
+                <p class="small-text">
+                    <a href="https://github.com/Gert-dev/php-integrator-refactoring">View the source</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/call-tips.png" />
+            </div>
+
+            <div class="right">
+                <h3>Call Tips</h3>
+                <p>
+                    Call tips are much like tooltips, but differ only in that they display items directly related to
+                    function or method calls, such as their expected parameters with their types and default values.
+                </p>
+
+                <p class="small-text">
+                    <a href="https://github.com/Gert-dev/php-integrator-call-tips">View the source</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="right">
+                <img src="images/linting.png" />
+            </div>
+
+            <div class="left">
+                <h3>Linting</h3>
+                <p>
+                    The list wouldn't be complete without a way to highlight errors before stumbling upon them whilst
+                    running the code. Finding nonexistent class names, docblock issues and missing global functions are
+                    all included in this process.
+                </p>
+
+                <p class="small-text">
+                    <a href="https://github.com/Gert-dev/php-integrator-linter">View the source</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">&nbsp;</div>
+
+        <h2>Awesome! What do I need?</h2>
+        <p>
+            To run, you will need at least:
+
+            atom-project-manager to manage your projects. When you have a project active, click Packages &rarr; PHP
+            Integrator &rarr; Set Up Current Project (or use the command palette). Documentation and type hinting -
+            See our wiki for more information.
+        </p>
+
+        <ul>
+            <li><em>PHP 5.5 or higher</em> &mdash; The code you're actually writing can be anything ranging from PHP 5.2 up to (and including) PHP 7.0.</li>
+            <li><em>php-sqlite and SQLite >= 3.7.11</em> &mdash; Required as back end for the indexing database.</li>
+            <li><em><a href="https://github.com/danielbrodin/atom-project-manager">atom-project-manager</a></em> &mdash; Fire up your active project and go to <em>Packages &rarr; PHP Integrator &rarr; Set Up Current Project</em> (or use the command palette).</li>
+            <li><em>Proper docblocks and type hinting</em> - See <a href="https://github.com/Gert-dev/php-integrator-base/wiki/Proper-Documentation-And-Type-Hinting">our wiki</a> for more information.</li>
+        </ul>
+
+        <h2>Wait, now I'm confused, what is it really?</h2>
+        <p>
+            At the moment, PHP Integrator itself is an Atom package that consists of a CoffeeScript side (that plugs into
+            Atom) and a PHP side. The PHP side is directly part of the Atom package to make the process of installing
+            it as painless as possible for Atom users.
+        </p>
+
+        <p>
+            The various functionalities, such as autocompletion and refactoring, that make up the PHP Integrator 'suite',
+            if you will, are all separate Atom packages as well. These packages interface with the base or core package
+            via a CoffeeScript service. Most of the heavy lifting, such as indexing, analyzing types and static
+            analysis is done by the PHP side.
+        </p>
+
+        <h2>Is it really exclusive to Atom?</h2>
+        <p>
+            The packages and CoffeeScript parts are dependent on Atom, but the PHP side, which does the heavy lifting,
+            is not dependent on Atom at all. One can just extract out the PHP code and build a plugin or extension
+            for another editor around it (in the future it might even be extracted into a separate repository).
+        </p>
+
+        <h2>Where is the code?</h2>
+        <p><a href="https://github.com/Gert-dev/php-integrator-base">Right here</a>, on GitHub.</p>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="small-text center">
+            If you think this project deserves it,
+            <strong><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YKTNLZCRHMRTJ">sending me some coffee beans</a></strong>
+            is most appreciated!
+        </div>
+    </div>
+</body>
