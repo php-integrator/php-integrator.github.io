@@ -116,7 +116,7 @@
             <img src="images/logo.png" alt="Logo" />
         </div>
 
-        <h1 class="title center">PHP Integrator</h1>
+        <h1 id="title" class="title center">PHP Integrator</h1>
 
         <div class="center">
             <em>PHP code analysis and utilities for the Atom editor</em>
@@ -138,7 +138,7 @@
             </div>
 
             <div class="left">
-                <h3>Autocompletion</h3>
+                <h3 id="autocompletion">Autocompletion</h3>
                 <p>
                     One of the most useful features in a programmer's toolbox is autocompletion, which suggests:
                 </p>
@@ -162,7 +162,7 @@
             </div>
 
             <div class="right">
-                <h3>Code navigation</h3>
+                <h3 id="code-navigation">Code navigation</h3>
                 <p>
                     Code navigation allows you to effortlessly travel through your codebase by clicking the names
                     of method calls, classes, interfaces, and other structural elements.
@@ -184,7 +184,7 @@
             </div>
 
             <div class="left">
-                <h3>Annotations</h3>
+                <h3 id="annotations">Annotations</h3>
                 <p>
                     Annotations provide you with relevant information about your code, such as that a parent property is
                     being overridden or an interface method is being implemented.
@@ -206,7 +206,7 @@
             </div>
 
             <div class="right">
-                <h3>Tooltips</h3>
+                <h3 id="tooltips">Tooltips</h3>
                 <p>
                     Tooltips display documentation for structural elements. Think extended docblock descriptions,
                     method parameter descriptions, return type descriptions and exceptions thrown.
@@ -224,7 +224,7 @@
             </div>
 
             <div class="left">
-                <h3>Refactoring</h3>
+                <h3 id="refactoring">Refactoring</h3>
                 <p>
                     Refactoring is the component that has the most potential. Features currently include:
                 </p>
@@ -248,7 +248,7 @@
             </div>
 
             <div class="right">
-                <h3>Call Tips</h3>
+                <h3 id="call-tips">Call Tips</h3>
                 <p>
                     Call tips are much like tooltips, but differ only in that they display items directly related to
                     function or method calls, such as their expected parameters with their types and default values.
@@ -266,7 +266,7 @@
             </div>
 
             <div class="left">
-                <h3>Linting</h3>
+                <h3 id="linting">Linting</h3>
                 <p>
                     The list wouldn't be complete without a way to highlight errors before stumbling upon them whilst
                     running the code. Finding nonexistent class names, docblock issues and missing global functions are
@@ -281,7 +281,7 @@
 
         <div class="row">&nbsp;</div>
 
-        <h2>Awesome! What do I need?</h2>
+        <h2 id="what-do-i-need">Awesome! What do I need?</h2>
         <p>
             To run, you will need at least:
 
@@ -297,7 +297,7 @@
             <li><em>Proper docblocks and type hinting</em> - See <a href="https://github.com/Gert-dev/php-integrator-base/wiki/Proper-Documentation-And-Type-Hinting">our wiki</a> for more information.</li>
         </ul>
 
-        <h2>Wait, now I'm confused, what is it really?</h2>
+        <h2 id="what-is-it-really">Wait, now I'm confused, what is it really?</h2>
         <p>
             At the moment, PHP Integrator itself is an Atom package that consists of a CoffeeScript side (that plugs into
             Atom) and a PHP side. The PHP side is directly part of the Atom package to make the process of installing
@@ -311,14 +311,14 @@
             analysis is done by the PHP side.
         </p>
 
-        <h2>Is it really exclusive to Atom?</h2>
+        <h2 id="is-it-really-exclusive-to-atom">Is it really exclusive to Atom?</h2>
         <p>
             The packages and CoffeeScript parts are dependent on Atom, but the PHP side, which does the heavy lifting,
             is not dependent on Atom at all. One can just extract out the PHP code and build a plugin or extension
             for another editor around it (in the future it might even be extracted into a separate repository).
         </p>
 
-        <h2>Where is the code?</h2>
+        <h2 id="where-is-the-code">Where is the code?</h2>
         <p><a href="https://github.com/Gert-dev/php-integrator-base">Right here</a>, on GitHub.</p>
     </div>
 
