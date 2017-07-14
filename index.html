@@ -314,13 +314,19 @@
         </p>
 
         <ul>
-            <li><em>PHP 7.1 or higher</em> &mdash; The code you're actually writing can be anything ranging from PHP 5.2 up to (and including) PHP 7.1.</li>
+            <li><em>PHP 7.1 or higher <sup>*</sup></em> &mdash; The code you're actually writing can be anything ranging from PHP 5.2 up to (and including) PHP 7.1.</li>
             <li><em>php-sqlite and SQLite >= 3.7.11</em> &mdash; Required as back end for the indexing database.</li>
             <li><em>php-mbstring</em> &mdash; Required as source code can contain Unicode characters in strings or comments.</li>
             <li><em>openssl</em> &mdash; Required to fetch dependencies properly via Composer.</li>
             <li><em><a href="https://github.com/danielbrodin/atom-project-manager">atom-project-manager</a></em> &mdash; Fire up your active project and go to <em>Packages &rarr; PHP Integrator &rarr; Set Up Current Project</em> (or use the command palette).</li>
             <li><em>Proper docblocks and type hinting</em> - See <a href="https://gitlab.com/php-integrator/core/wikis">our wiki</a> for more information.</li>
         </ul>
+
+        <p class="small-text">
+            <sup>*</sup> Still running PHP 5.6 or PHP 7.0? Look for the Atom packages suffixed with the text
+            -legacy-php56, such as <a href="https://github.com/php-integrator/atom-base-legacy-php56">php-integrator-base-legacy-php56</a>.
+            These are now unmaintained, but may provide a stopgap until you are able to update.
+        </p>
 
         <h2 id="what-is-it-really">Wait, now I'm confused, what is it really?</h2>
         <p>
