@@ -324,28 +324,28 @@
 
         <h2 id="what-is-it-really">Wait, now I'm confused, what is it really?</h2>
         <p>
-            At the moment, PHP Integrator itself is an Atom package that consists of a CoffeeScript side (that plugs into
-            Atom) and a PHP side. The PHP side is separate from the Atom package but is installed automatically to make
-            the process of installing it as painless as possible for Atom users.
+            At the moment, PHP Integrator itself consists of a set of Atom packages written in CoffeeScript, backed by
+            a socket server written in PHP. The PHP server is separate from the Atom packages, but is installed
+            automatically to make the process of installing it as painless as possible for Atom users.
         </p>
 
         <p>
-            The various functionalities, such as autocompletion and refactoring, that make up the PHP Integrator 'suite',
-            if you will, are all separate Atom packages as well. These packages interface with the base or core package
-            via a CoffeeScript service. Most of the heavy lifting, such as indexing, analyzing types and static
-            analysis is done by the PHP side.
+            Various additional functionalities, such as autocompletion and refactoring, can be installed as separate
+            Atom packages as well. These packages interface with the base package via a CoffeeScript service. Most of
+            the heavy lifting, such as indexing, analyzing types and static analysis is done by the PHP server.
         </p>
 
         <h2 id="is-it-really-exclusive-to-atom">Is it really exclusive to Atom?</h2>
         <p>
-            The packages and CoffeeScript parts are dependent on Atom, but the PHP side, which does the heavy lifting,
-            is not dependent on Atom at all. The PHP side was originally part of the base Atom package, but
+            The packages and CoffeeScript parts are dependent on Atom, but the PHP server, which does the heavy lifting,
+            is not dependent on Atom at all. The PHP server was originally part of the base Atom package, but
             <a href="https://gitlab.com/php-integrator/core">has been split off into a separate repository for reuse</a>.
         </p>
 
+        <h2 id="is-it-really-exclusive-to-atom">What about making it a language server?</h2>
         <p>
             The Language Server Protocol has gathered some interest of late. Currently the core is not a compliant
-            language server, but it already is a socket server using JSON for communication. Becoming compliant with
+            language server, but it already is a socket server using JSON-RPC for communication. Becoming compliant with
             the protocol is on the roadmap and would make the core much more reusable for other editors.
         </p>
 
