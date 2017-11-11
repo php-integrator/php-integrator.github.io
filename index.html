@@ -56,7 +56,7 @@
             margin-top: 1.5em;
         }
 
-        ul li {
+        ul li, ol li {
             line-height: 1.7;
         }
 
@@ -64,7 +64,7 @@
             color: #333333;
         }
 
-        ul {
+        ul, ol {
             margin-top: 15px;
         }
 
@@ -336,6 +336,20 @@
             -legacy-php56, such as <a href="https://github.com/php-integrator/atom-base-legacy-php56">php-integrator-base-legacy-php56</a>.
             These are unmaintained, but may provide a stopgap until you are able to update.
         </p>
+
+        <h2 id="how-do-i-make-it-work">How do I make it work?</h2>
+        <p>
+            In a nutshell:
+        </p>
+
+        <ol>
+            <li>Install <em>PHP 7.1 or higher</em>.</li>
+            <li>In <code>php.ini</code>, enable the extensions <em>mbstring, openssl</em> and <em>sqlite (the PDO variant)</em>.</li>
+            <li>In Atom editor, install the <a href="https://atom.io/packages/php-integrator-base">base package</a> and its dependencies.</li>
+            <li>If necessary, give the path to your PHP binary in <em>Settings &rarr; Packages &rarr; php-integrator-base Settings &rarr; Core</em>.</li>
+            <li>Restart Atom and allow the base package to install the core.</li>
+            <li>Add your project in <em>Project Manager</em> and set it up.</li>
+        </ol>
 
         <h2 id="what-is-it-really">Wait, now I'm confused, what is it really?</h2>
         <p>
